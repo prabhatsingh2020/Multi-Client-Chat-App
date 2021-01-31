@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ichat - Realtime Node Socket.io Chat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <!-- defer lagane se hmlog ki script background me load hoti hai aur jab hmlog ki dom ready ho jayegi tab hmlog ki script run ho jati hai -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img src="/chat.png" alt="" class="logo">
+        <h1>Welcome to iDiscuss Chat App</h1>
+    </nav>
+    <div class="container">
+        <!-- <div class="message right">Harry: Hey how are you?</div>
+        <div class="message left">Rohan: Brother I am fine. How about you?</div> -->
+        <!-- ye ek khali container hai jo javascript se dynamically populate ho rha hai -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageinp" id="messageinp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

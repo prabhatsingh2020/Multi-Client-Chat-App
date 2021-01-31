@@ -1,0 +1,82 @@
+body{
+    height:100vh;
+    background-image: linear-gradient(rgb(238, 239, 248),rgb(197, 64, 197));
+}
+
+.logo{
+    display: block;
+    margin: 0px auto;
+    width:50px;
+    height:50px;
+}
+
+h1{
+    margin-top: 12px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container{
+    max-width: 955px;
+    border:2px solid black;
+    margin: auto;
+    height:60vh;
+    overflow-y: auto;
+    /* auto dene ka matlab hai jab msg bharne lagega tab khud hi scroll button aa jayega aur scroll hone lagega  */
+    margin-bottom: 25px;
+    padding:34px 34px;
+    border-radius: 10px;
+}
+
+.message{
+    background-color: rgb(250, 240, 240);
+    width:24%;
+    padding:10px;
+    margin: 17px 12px;
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+.left{
+    float:left;
+    clear: both;
+    /* clear both se ye uske jagah me hi float nahi karega */
+}
+
+.right{
+    float: right;
+    clear: both;
+}
+
+#send-container{
+    display: block;
+    margin:0px auto;
+    /* ye do upar k css dene pe bhi center nahi ho rha hai kyu ki form k andar jo text likha jayega wo display inline block hai to hmko andar ka bhi content ko center me lana hoga */
+    text-align: center;
+    width:100%;
+    max-width: 980px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#messageinp{
+    border:2px solid black;
+    border-radius: 6px;
+    height:34px;
+    width:91%;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.btn{
+    cursor:pointer;
+    outline:none;
+    border:2px solid black;
+    margin:0px 5px;
+    padding:0px 20px;
+    height:37px;
+    border-radius: 6px;
+    /* abhi msg likh k bhejne se reload ho ja rha hai page to ab send pe click karne pe kaise send hoga wo dekhte hai socket.IO se  */
+}
